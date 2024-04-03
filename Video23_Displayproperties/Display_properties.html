@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display properties</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /*Inline display property does not obey the top margin,top padding property and also width changes instead you can use inline-block*/
+        /* Use Ctrl+ / for comment out any line */
+        .box{
+            border:2px solid blue;
+            display: inline-block;
+            padding: 45px;
+            margin: 34px;
+            width: 344px;
+        }
+        .box1{
+           /* display: none; */
+           /* visibility:hidden;  */
+           /* display: flex; */
+           /* justify-content: center; */
+           display: grid;
+           justify-content: center;
+        }
+    </style>
+</head>
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box">also a nice box</div>
+    <span>I am a good</span>
+    <span>boy</span>
+</body>
+</html>

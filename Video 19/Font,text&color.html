@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts,text&color</title>
+    <Style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Slackside+One&display=swap');
+
+        /*We can also use link insted of import from the google fonts*/
+        *{
+            padding: 0%;
+            margin: 0%;
+            color: blueviolet;
+        }
+        h1{
+            font-family: "Slackside One", cursive;
+            /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+            text-align: center;
+            text-decoration: underline overline rgb(17, 86, 198);
+            text-decoration-style: wavy;
+            text-decoration-thickness: 5px;
+        }
+        p{
+           /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+           font-family: "Ojuju", sans-serif;
+           font-style: italic;
+           text-decoration: underline overline;
+           font-weight: 500;
+           word-spacing: 30px;
+           line-height: 200%;
+        }
+        .lorem{
+            border: 2px solid red ;
+            width: 45px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+           /* white-space: nowrap;*/
+           word-break: break-all;
+        }
+        h2{
+          text-transform: uppercase;
+          text-decoration: underline overline red; 
+          text-decoration-style: wavy;
+          text-decoration-thickness: 5px;
+          text-align: center;
+          text-indent: 45px;
+           
+        }
+    </Style>
+</head>
+<body>
+    <div>
+        <!-- https://codepen.io/web-dot-dev/pen/yLojraG -->
+        <h1>Fonts</h1>
+        <p>This is video on fonts</p>
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis ratione temporibus aperiam nemo placeat quia optio eos molestiae cupiditate veniam, sit nesciunt quasi odio nisi aspernatur omnis quo odit quibusdam error, consequuntur nihil fugiat pariatur aliquam. Optio aperiam atque eveniet doloremque delectus, officia perferendis quam?</p>
+        <br> <br>
+        <h2>About Fonts</h2>
+    </div>
+</body>
+</html>

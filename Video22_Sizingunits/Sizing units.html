@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid red;
+            width: 1059px;
+            background-color: aquamarine;
+            margin:23px auto;
+            /*A pixel is 1/196 of an inch*/
+          }
+          .container{
+            box-sizing: border-box;
+            border: 2px solid red;
+            width: 80vh;
+            height: 80vh;
+            font-size: 18px;
+            background-color: aquamarine;
+            margin:23px auto;
+          }
+          /*vmin=vh
+            vmax=vw
+          */
+          .container p{
+            font-size: 1.5em;
+          }
+
+          /*https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units*/
+    </style>
+</head>
+<body>
+    <div class="box">This is a box</div>
+    <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione autem numquam possimus dolorum saepe! Sapiente atque iste doloribus a et laborum amet porro necessitatibus velit repellat, in voluptatibus vero praesentium ipsum mollitia tempore laboriosam! Quam non consequuntur in aut debitis porro harum? Quo eligendi cumque possimus earum doloremque optio vero praesentium mollitia! Tempore quibusdam quidem possimus?
+        <p>This is the new paragraph</p>
+    </div>
+</body>
+</html>
+    

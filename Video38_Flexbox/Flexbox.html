@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container{
+             border: 2px solid red;
+             display: flex;
+             height: 80vh;
+             align-content: center;
+              /* It is used when there is only one line in a container otherwise aling-content is used for multiple line */
+             /* justify-content: space-around; */
+             align-items: center;
+             /* flex-direction: column; */
+             /* flex-wrap:wrap; */
+             flex-flow:row wrap ;/* flex-flow:row wrap; */
+             /* gap: 30px; */
+             /* row-gap: 33px;
+             column-gap: 20px; */
+             gap: 33px 20px;  /*gap: row-gap column-gap*/
+             overflow:scroll;
+             
+        }
+        .item{
+            height: 92px;
+            width: 92px;
+            border: 2px solid black;
+            /* margin: 4px; */
+            background-color:blueviolet;
+
+        }
+        .order-1{
+            order: 1;
+        }
+        .order-2{
+            order: 3;
+        }
+        .order-3{
+            order: 2;
+        }
+        .item5{
+            /* flex-grow: 2; */
+            flex-shrink: 2;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item order-1">Order 1</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item order-2">Order 2</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item order-3">Order 3</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item item5"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+    </div>
+</body>
+</html>

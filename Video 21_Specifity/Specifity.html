@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: aqua;
+        }
+        .yellow{
+           color: yellow; 
+        }
+        .cred{
+            /* By putting !important we can use that style for html element*/
+            color: red;
+            color: black !important;
+        }
+        .cpurple{
+            color: purple;
+        }/*Attribute Selector*/
+        [data-x=a]{
+            background-color: rgb(14, 167, 63);
+        }
+
+    </style>
+</head>
+<body>
+    <!--CSS stands for cascade stylesheets.Here cascade is the algorithm for solving conflicts where multiple css rules apply to an HTML element   
+    Rules---
+    1.Position and order of appearance: the order in which your CSS rules appear
+    2.Specificity: an algorithm that determines which CSS selector has the strongest match
+    3.Origin: the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS
+    4.Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type
+   
+    Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector
+
+    Calculation of specifity---
+    -->
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">CSS Specifity</h1>
+    </div>
+</body>
+</html>

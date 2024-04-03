@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black; 
+            display: flow-root;
+        }
+        img{
+            float: right;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://www.tusktravel.com/blog/wp-content/uploads/2021/12/Pangong-Lake-Ladakh.jpg" alt="This is not loading"  width="244px" >
+        <div class="card">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo nostrum, tempore in officia quibusdam odit odio tempora necessitatibus aperiam. Fugit esse delectus ab illum porro sunt, eum soluta eius tempore sed officiis natus ea.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi libero aspernatur corrupti illum, similique ipsum recusandae ullam totam animi aperiam velit ratione quibusdam nemo odit earum voluptatum. Possimus laboriosam quo iusto nam aspernatur explicabo, debitis veniam impedit officiis, autem modi tempore, facilis qui recusandae inventore necessitatibus deserunt accusantium eius et animi provident. Repellat consequatur aut aperiam optio facere rerum inventore laborum. Quia, veritatis fugiat dolor molestias reprehenderit ducimus saepe reiciendis, exercitationem, cupiditate sunt itaque ipsam facere sed expedita culpa accusamus! Tempora tenetur possimus libero cum ex reprehenderit vero?
+            </p>
+        </div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+</html>

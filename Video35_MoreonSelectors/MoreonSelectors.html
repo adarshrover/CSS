@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS More on Selectors</title>
+    <style>
+    .box:first-child{
+        background-color: tomato;
+    }
+    .box::first-letter{
+        color: rgb(221, 221, 12);
+        font-size: 45px;
+    }
+    .box:last-child{
+        color: aqua;
+    }
+    .boxes *{
+        background-color: blue;
+        border: 2px solid black;
+    } 
+    p,a, .box ,[data-color="primary"]{
+        margin-top:45px ;
+        padding-top: 45px;
+    }
+    .box:nth-child(even){
+        background-color: rgb(163, 80, 94);
+    }
+    .box:nth-last-child(2){
+        padding: 30px;
+        color: rgb(254, 0, 203);
+    }
+    .boxes::before{
+        content: "I am good";
+    }
+    .boxes::after{
+        content: "I am not so good";
+        color:rgb(220, 216, 8);
+    }
+    ::selection{
+        color: rgb(205, 208, 20);
+        background-color: rgb(20, 168, 84);
+    }
+    input::placeholder{
+        background-color: azure;
+        color: bisque;
+        font-size: 45px;
+    }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Hey I am a box Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita incidunt suscipit maiores, natus explicabo optio consequuntur. Facilis totam praesentium harum quae nisi consequatur quisquam et cupiditate repellat blanditiis iusto culpa natus repellendus eos nam, dolorem itaque. Fuga dolorem vel numquam nam alias suscipit, amet tenetur itaque nesciunt saepe exercitationem rerum doloribus eius modi. Aperiam, veritatis!</div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <div data-color="primary" class="box"></div>
+        <input type="text" placeholder="Type your name here">
+    </div>
+</body>
+</html> 
